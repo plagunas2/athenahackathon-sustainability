@@ -18,7 +18,7 @@
 
 
 .separate{
-    padding: 60px;
+    padding: 50px;
 }
 
 * {
@@ -66,3 +66,6 @@
     }
 }
 
+.compostCalc{
+  text-align: center;
+}
