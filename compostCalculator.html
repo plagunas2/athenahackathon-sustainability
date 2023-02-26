@@ -13,7 +13,7 @@
     <!-- NAVIGATION BAR START --> 
     <nav class="navbar navbar-expand-lg" style="background-color: #a9c3b6;">
         <div class="container">
-          <a class="navbar-brand" href="#">SustainAHack</a>
+          <a class="navbar-brand" href="index.html">SustainAHack</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,7 +38,7 @@
     <div class="container">
         <h1 class="display-1">Can it Compost?</h1>
         <h2 class="display-4">Input a food item and see if it can be composted!</h2>
-        <h2 class="display-6">*Results are based on small, home composting systems</h2>
+        <p class="display-6">*Results are based on small, home composting systems</p>
     </div>
     <!-- JUMBOTRON HEADER END -->
     <div class="separate">
@@ -55,19 +55,19 @@
         
         <script>
         function myFunction() {
-            const compostable = ["eggshells", "coffee grounds", "leaves", "grass", "vegetable scraps", "strawberry", "banana", "grape", "carrot", "potato", "tomato", "vegetable", "nutshells", "seaweed", "pasta", "cardboard", "paper", "vegetables", "celery", "wood chips"];
+            const compostable = ["eggshells","apples", "fruit", "egg shells", "coffee grounds", "leaves", "grass", "vegetable scraps", "strawberry", "banana", "grape", "carrot", "potato", "tomato", "vegetable", "nutshells", "seaweed", "pasta", "cardboard", "paper", "vegetables", "celery", "wood chips", "cucumber"];
             let c = 0;
             var x = document.getElementById("myText").value;
             while(c < compostable.length){
-                if(x == compostable[c]){
+                if(x.toLowerCase() == compostable[c]){
                     document.getElementById("output").innerHTML = "Yes!";
                     break;
                 }
-                if(x != compostable[c]){
+                if(x.toLowerCase() != compostable[c]){
                     c++;
                 }
                 if(c == ((compostable.length)-1)){
-                    document.getElementById("output").innerHTML = "No"
+                    document.getElementById("output").innerHTML = "No :("
                 }
             }
             
@@ -76,7 +76,24 @@
         </script>
 
     </div>
-   
+
+    <div class="separate"></div>
+    
+    <div class="container">
+        <h2 class="display-4">General Composting Rules & Tips</h2>
+        <div class="separate1"></div>
+
+        <p class="display-6">One of the easiest ways to participate in sustainable living is to compost leftover food scraps that would otherwise be thrown in the trash. By composting, you can recycle food waste to create nutrient-rich soil that helps plants grow. It's like giving back to the Earth!</p>
+        
+        <div class="separate1"></div>
+
+        <p class="display-6">However, not just anything can be composted. Composters should generally avoid inorganic materials, such as metal or plastic. Animal products like bones, meat, and dairy should also be avoided.</p>
+
+        <div class="separate1"></div>
+
+        <p class="display-6">To ensure healthy compost, make sure to always include "brown matter", such as leaves, and "green matter", like grass or vegetables. Compost should have open access to air and maintain a moderate level of dampness.</p>
+
+    </div>
 
     <!-- FOOTER START -->
     <footer class="bd-footer py-4 py-md-5 mt-5" style="background-color: #A9c3b6;">
