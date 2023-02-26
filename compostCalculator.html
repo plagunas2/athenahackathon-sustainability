@@ -13,7 +13,7 @@
     <!-- NAVIGATION BAR START --> 
     <nav class="navbar navbar-expand-lg" style="background-color: #a9c3b6;">
         <div class="container">
-          <a class="navbar-brand" href="#">SustainAHack</a>
+          <a class="navbar-brand" href="index.html">SustainAHack</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,15 +55,15 @@
         
         <script>
         function myFunction() {
-            const compostable = ["eggshells", "coffee grounds", "leaves", "grass", "vegetable scraps", "strawberry", "banana", "grape", "carrot", "potato", "tomato", "vegetable", "nutshells", "seaweed", "pasta", "cardboard", "paper", "vegetables", "celery", "wood chips"];
+            const compostable = ["eggshells", "egg shells", "coffee grounds", "leaves", "grass", "vegetable scraps", "strawberry", "banana", "grape", "carrot", "potato", "tomato", "vegetable", "nutshells", "seaweed", "pasta", "cardboard", "paper", "vegetables", "celery", "wood chips"];
             let c = 0;
             var x = document.getElementById("myText").value;
             while(c < compostable.length){
-                if(x == compostable[c]){
+                if(x.toLowerCase() == compostable[c]){
                     document.getElementById("output").innerHTML = "Yes!";
                     break;
                 }
-                if(x != compostable[c]){
+                if(x.toLowerCase() != compostable[c]){
                     c++;
                 }
                 if(c == ((compostable.length)-1)){
