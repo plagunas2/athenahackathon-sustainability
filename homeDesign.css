@@ -18,7 +18,11 @@
 
 
 .separate{
-    padding: 50px;
+    padding: 40px;
+}
+
+.separate1{
+  padding:20px;
 }
 
 * {
